@@ -24,6 +24,6 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 ## 🚀 Live Demo
 
 🌍 **Deployed At:**  
-[https://avinashsaripalli.netlify.app](https://avinashsaripalli.netlify.app)  
+https://my-portfolio-dsc55k520-saripalli-avinashs-projects.vercel.app/ 
 
 
