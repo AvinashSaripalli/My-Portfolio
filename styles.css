@@ -907,34 +907,79 @@ header.scrolled {
 
 .about-image-wrapper {
   position: relative;
-  border-radius: var(--border-radius-md);
-  overflow: hidden;
   margin-bottom: 24px;
-  border: 1px solid var(--border-subtle);
+}
+
+.about-image-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background: var(--gradient-brand);
+  filter: blur(35px);
+  opacity: 0.28;
+  border-radius: var(--border-radius-xl);
+  z-index: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.about-image-wrapper:hover .about-image-glow {
+  opacity: 0.55;
+}
+
+.about-image-frame {
+  position: relative;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  border: 2px solid var(--border-subtle);
+  background: var(--bg-card-solid);
+  box-shadow: var(--shadow-lg);
+  z-index: 1;
 }
 
 .about-image {
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 4.4;
   object-fit: cover;
+  object-position: center top;
   transition: transform var(--transition-normal);
+  display: block;
 }
 
 .about-image-wrapper:hover .about-image {
   transform: scale(1.03);
 }
 
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 11, 18, 0.45) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.badge-about-top {
+  top: -12px;
+  right: -10px;
+  animation-delay: 1.5s;
+}
+
 .experience-chip {
   position: absolute;
   bottom: 14px;
   right: 14px;
-  background: rgba(8, 11, 18, 0.85);
-  backdrop-filter: blur(10px);
+  background: rgba(8, 11, 18, 0.88);
+  backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   padding: 8px 14px;
   border-radius: var(--border-radius-sm);
   display: flex;
   flex-direction: column;
+  z-index: 3;
+  box-shadow: var(--shadow-sm);
 }
 
 .chip-num {
