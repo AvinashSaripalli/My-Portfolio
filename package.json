@@ -1,0 +1,18 @@
+{
+  "name": "avinash-portfolio",
+  "version": "2.0.0",
+  "description": "Avinash Saripalli - Modern Personal Portfolio & Showcase",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "keywords": [
+    "portfolio",
+    "mern",
+    "react",
+    "developer",
+    "frontend"
+  ],
+  "author": "Avinash Saripalli",
+  "license": "MIT"
+}
