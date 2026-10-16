@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash Saripalli - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 8mm 12mm 8mm 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      line-height: 1.34;
+      font-size: 9.1pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 7px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #2563eb;
+    }
+
+    h1.name {
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .job-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 3px;
+      letter-spacing: 0.02em;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 8.6pt;
+      color: #4b5563;
+    }
+
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-separator {
+      color: #9ca3af;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 7px;
+    }
+
+    .section-title {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Professional Summary */
+    .summary-text {
+      font-size: 8.7pt;
+      color: #374151;
+      text-align: justify;
+      line-height: 1.34;
+    }
+
+    /* Skills Grid */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      font-size: 8.7pt;
+    }
+
+    .skill-category {
+      display: flex;
+      line-height: 1.32;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      color: #0f172a;
+      width: 140px;
+      flex-shrink: 0;
+    }
+
+    .skill-items {
+      color: #374151;
+      flex: 1;
+    }
+
+    /* Experience & Projects */
+    .entry-item {
+      margin-bottom: 5px;
+    }
+
+    .entry-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .entry-role {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .entry-company {
+      font-size: 9.2pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .entry-location {
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    .entry-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #4b5563;
+      white-space: nowrap;
+    }
+
+    .entry-subhead {
+      font-size: 8.7pt;
+      font-weight: 500;
+      color: #4b5563;
+      margin-bottom: 2px;
+    }
+
+    .tech-pill {
+      font-size: 7.8pt;
+      font-weight: 600;
+      color: #1e40af;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 1px 5px;
+      border-radius: 4px;
+      margin-left: 6px;
+      display: inline-block;
+    }
+
+    /* Bullet Points */
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 14px;
+      margin-top: 1px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8px;
+    }
+
+    ul.bullet-list li {
+      font-size: 8.6pt;
+      color: #374151;
+      line-height: 1.33;
+      text-align: justify;
+    }
+
+    ul.bullet-list li strong {
+      color: #111827;
+      font-weight: 600;
+    }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3px;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-degree {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .edu-institution {
+      font-size: 8.5pt;
+      color: #4b5563;
+    }
+
+    .edu-meta {
+      text-align: right;
+      font-size: 8.4pt;
+      color: #4b5563;
+    }
+
+    .edu-grade {
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+      }
+      .resume-container {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Header -->
+    <header>
+      <h1 class="name">Avinash Saripalli</h1>
+      <div class="job-title">Software Developer &bull; MERN Stack & React.js Specialist</div>
+      <div class="contact-info">
+        <span>📍 Hyderabad, India</span>
+        <span class="contact-separator">|</span>
+        <span>📞 <a href="tel:+919603883879">+91 9603883879</a></span>
+        <span class="contact-separator">|</span>
+        <span>✉️ <a href="mailto:avinashsaripalli2000@gmail.com">avinashsaripalli2000@gmail.com</a></span>
+        <span class="contact-separator">|</span>
+        <span>🔗 <a href="https://linkedin.com/in/avinash-saripalli-93009525a" target="_blank">LinkedIn</a></span>
+        <span class="contact-separator">|</span>
+        <span>🐙 <a href="https://github.com/AvinashSaripalli" target="_blank">GitHub</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Results-driven <strong>MERN Stack Developer</strong> with hands-on professional experience at <strong>Karncy Ventures</strong> designing and maintaining responsive, high-performance web applications. Proficient in architecting modular user interfaces with <strong>React.js</strong> and <strong>Material UI</strong>, managing scalable application state using <strong>Redux</strong>, and integrating robust <strong>RESTful APIs</strong> with <strong>Node.js</strong> and <strong>MongoDB/MySQL</strong>. Passionate about clean code standards, intuitive UX, and agile delivery. Available for immediate joining.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-block">
+        <div class="skill-category">
+          <span class="skill-label">Frontend Development:</span>
+          <span class="skill-items">React.js, Redux / Redux Toolkit, JavaScript (ES6+), HTML5, CSS3, Material UI, Tailwind CSS, Responsive Web Design, Context API</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">Backend & APIs:</span>
+          <span class="skill-items">Node.js, Express.js, RESTful APIs, JWT Authentication, Role-Based Access Control (RBAC), Asynchronous Architecture</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">Databases & Tools:</span>
+          <span class="skill-items">MongoDB (Mongoose), MySQL, Git, GitHub, Postman, VS Code, npm, Chrome DevTools</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-label">Core Competencies:</span>
+          <span class="skill-items">Component Lifecycle Optimization, Web Performance Tuning, Agile/Scrum Collaboration, Cross-Browser Compatibility, Debugging</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <div class="section-title">Professional Experience</div>
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Software Developer</span> &bull; 
+            <span class="entry-company">Karncy Ventures Private Limited</span>
+            <span class="entry-location">(Hyderabad, India)</span>
+          </div>
+          <span class="entry-date">October 2024 &ndash; Present</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected and deployed responsive, user-centric web interfaces using <strong>React.js and Material UI</strong>, standardizing reusable component libraries and accelerating frontend sprint velocity by <strong>25%</strong>.</li>
+          <li>Implemented scalable global state management architectures utilizing <strong>React Hooks and Redux Toolkit</strong> to orchestrate complex user flows and multi-step dynamic forms.</li>
+          <li>Integrated and optimized high-throughput <strong>RESTful APIs</strong> with asynchronous data pipelines, ensuring seamless real-time data synchronization between frontend modules and backend microservices.</li>
+          <li>Engineered secure <strong>role-based access control (RBAC)</strong> dashboards with JWT session handling for administrators and regular staff tiers.</li>
+          <li>Conducted systematic web performance profiling and asset optimization, reducing initial load latency and guaranteeing smooth cross-browser responsiveness across all devices.</li>
+          <li>Partnered actively with UI/UX designers and backend engineers in <strong>Agile Scrum cycles</strong>, participating in daily standups, sprint reviews, and peer code audits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <div class="section-title">Projects</div>
+
+      <!-- EMS -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">Employee Management System (EMS)</span>
+            <span class="tech-pill">React.js &bull; Node.js &bull; Express.js &bull; MySQL &bull; JWT</span>
+          </div>
+          <span class="entry-date">Full-Stack Application</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed a full-stack, enterprise-grade workforce management suite with dedicated role-based portals for Admin, Manager, and Employee tiers.</li>
+          <li>Integrated secure <strong>JWT authentication</strong>, token-based session verification, dynamic leave application workflows, and automated employee profile CRUD.</li>
+          <li>Engineered interactive analytical dashboard charts using <strong>Chart.js</strong> connected to REST APIs for real-time visualization of departmental attendance and headcount trends.</li>
+        </ul>
+      </div>
+
+      <!-- CP-ABE-HP -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">CP-ABE-HP: Secure Cloud Data Sharing</span>
+            <span class="tech-pill">Java &bull; Cryptography &bull; Cloud Security</span>
+          </div>
+          <span class="entry-date">Research & Architecture</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Designed a Ciphertext-Policy Attribute-Based Encryption (CP-ABE) model enabling fine-grained, policy-based access control for multi-tenant encrypted cloud data.</li>
+          <li>Guaranteed user anonymity and attribute confidentiality by engineering hidden policy structures and an instant user revocation mechanism without system re-encryption.</li>
+          <li>Optimized attribute management and key distribution algorithms, significantly reducing compute and storage overhead in cloud environments.</li>
+        </ul>
+      </div>
+
+      <!-- E-Commerce -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-role">MERN E-Commerce & Inventory Storefront</span>
+            <span class="tech-pill">React.js &bull; Redux Toolkit &bull; Node.js &bull; MongoDB</span>
+          </div>
+          <span class="entry-date">Web Application</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Constructed a modern responsive online store with dynamic product cataloging, multi-criteria filtering, and search indexing via MongoDB Atlas.</li>
+          <li>Engineered persistent shopping cart state management with <strong>Redux Toolkit</strong> and local storage sync, featuring a simulated multi-step checkout workflow.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="edu-item">
+        <div>
+          <div class="edu-degree">Bachelor of Technology (B.Tech) &ndash; Computer Science & Engineering</div>
+          <div class="edu-institution">Sir C. R. Reddy College of Engineering &bull; Eluru, Andhra Pradesh</div>
+        </div>
+        <div class="edu-meta">
+          <div>2019 &ndash; 2023</div>
+          <div class="edu-grade">CGPA: 6.74 / 10</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div>
+          <div class="edu-degree">Intermediate (MPC: Mathematics, Physics, Chemistry)</div>
+          <div class="edu-institution">Sri Chaitanya Junior College &bull; Eluru, Andhra Pradesh</div>
+        </div>
+        <div class="edu-meta">
+          <div>2017 &ndash; 2019</div>
+          <div class="edu-grade">CGPA: 9.5 / 10 (Distinction)</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
