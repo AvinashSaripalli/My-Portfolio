@@ -1,206 +1,1334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avinash Saripalli</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="icon" href="images/favicon.ico?v=2">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <!-- Primary Meta Tags -->
+  <title>Avinash Saripalli | Full-Stack & MERN Developer | React.js Specialist</title>
+  <meta name="title" content="Avinash Saripalli | Full-Stack & MERN Developer | React.js Specialist">
+  <meta name="description" content="Portfolio of Avinash Saripalli, a MERN Stack & React.js Developer with experience building high-performance, responsive web applications. Based in Hyderabad, available for immediate joining.">
+  <meta name="keywords" content="Avinash Saripalli, MERN Stack Developer, React.js Developer, Frontend Engineer, Full Stack Developer, Hyderabad, Karncy Ventures, Web Developer Portfolio">
+  <meta name="author" content="Avinash Saripalli">
+  <meta name="theme-color" content="#0a0d14">
 
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/AvinashSaripalli">
+  <meta property="og:title" content="Avinash Saripalli | MERN Stack Developer">
+  <meta property="og:description" content="Passionate MERN Stack & React Developer building responsive, user-centric web applications. Explore my projects, skills, and experience.">
+  <meta property="og:image" content="avinash-about.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='60%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='50' fill='%23ffffff'>AS</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & Devicons & Boxicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <header>
-    <a href="#" class="logo">Avinash Saripalli</a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <div class="bx bx-moon" id="darkmode"></div>
-    </ul>
+  <!-- Ambient Background Glow & Grid -->
+  <div class="bg-gradient-glow" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Avinash</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-tag">dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#terminal" class="nav-link">Console</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="bx bx-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume CTA in Header -->
+        <a href="AVINASH SARIPALLI.pdf" class="btn btn-sm btn-outline header-resume" target="_blank" rel="noopener noreferrer">
+          <i class="bx bx-file"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-icon" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <section class="home" id="home">
-    <div class="social">
-      <a href="https://github.com/AvinashSaripalli" target="_blank"><i class='bx bxl-github'></i></a>
-      <a href="https://www.linkedin.com/in/avinash-saripalli-93009525a/"><i class='bx bxl-linkedin'></i></a>
-    </div>
-    <div class="home-img">
-      <img src="WhatsApp Image 2025-04-11 at 09.40.10_2657b5ad.jpg" alt="Avinash Saripalli Photo">
-    </div>
-    <div class="home-text">
-      <span>Hello, I'm</span>
-      <h1>Avinash Saripalli</h1>
-      <h2>MERN Stack Developer</h2>
-      <p>Creative and detail-oriented developer with experience in building responsive, user-centric web applications using React.js, Node.js, and MongoDB.</p>
-      <a href= "AVINASH SARIPALLI.pdf" class="btn">Download CV</a>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="heading">
-      <h2>About Me</h2>
-      <span>Introduction</span>
-    </div>
-    <div class="about-container">
-      <div class="about-img">
-        <img src="avinash-about.jpg" alt="Avinash Saripalli">
-      </div>
-      <div class="about-text">
-        <p>I'm a MERN Stack Developer with solid understanding of fullstack web development and hands-on experience in building responsive, user-centric web applications using React.js, Node.js, and MongoDB. Passionate about clean UI design, high performance, and intuitive user experiences.<br><br>
-        I'm a collaborative team player with experience working closely with designers and backend developers in fast-paced environments. Currently seeking Front-End Developer roles focused on React.js and available for immediate joining.<br><br>
-        My technical skills include React.js, JavaScript, Node.js, Express.js, MongoDB, MySQL, and I'm proficient with tools like Git, Postman, and VS Code. I bring strong problem-solving abilities and excellent communication skills to every project.</p>
-        <!-- <div class="information">
-          <div class="info-box">
-            <i class='bx bxs-user'></i>
-            <span>Avinash Saripalli</span>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-badge" data-aos="fade-up">
+            <span class="pulse-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-core"></span>
+            </span>
+            <span class="badge-text">Available for Immediate Joining &bull; Hyderabad / Remote</span>
           </div>
-          <div class="info-box">
-            <i class='bx bxs-phone'></i>
-            <span>+91 9603883879</span>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Hi, I'm <span class="gradient-text">Avinash Saripalli</span>
+          </h1>
+
+          <div class="hero-role-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <span class="role-intro">I am a</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor-blink">|</span>
           </div>
-          <div class="info-box">
-            <i class='bx bxs-envelope'></i>
-            <span>avinashsaripalli2000@gmail.com</span>
+
+          <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+            Passionate <strong>MERN Stack Developer</strong> with hands-on experience at <strong>Karncy Ventures</strong> building scalable web architectures, pixel-perfect user interfaces, and robust REST APIs using <strong>React.js, Node.js, Express, and MongoDB/MySQL</strong>.
+          </p>
+
+          <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="400">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+            <a href="AVINASH SARIPALLI.pdf" download="Avinash_Saripalli_Resume.pdf" class="btn btn-secondary" target="_blank">
+              <i class="bx bx-download"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="bx bx-envelope"></i>
+              <span>Let's Talk</span>
+            </a>
           </div>
-        </div> -->
-      </div>
-    </div>
-  </section>
 
-  <section class="skills" id="skills">
-    <div class="heading">
-      <h2>Skills</h2>
-      <span>My Skills</span>
-    </div>
-    <div class="skills-container">
-      <div class="bars">
-        <div class="bars-box">
-          <h3>React.js</h3>
-          <span>90%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar html-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>JavaScript</h3>
-          <span>85%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar css-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>Node.js</h3>
-          <span>80%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar js-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>MongoDB</h3>
-          <span>75%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>Express.js</h3>
-          <span>75%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>HTML</h3>
-          <span>80%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>CSS</h3>
-          <span>80%</span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
+          <!-- Social Links Strip -->
+          <div class="hero-socials" data-aos="fade-up" data-aos-delay="500">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-row">
+              <a href="https://github.com/AvinashSaripalli" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/avinash-saripalli-93009525a/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="mailto:avinashsaripalli2000@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email: avinashsaripalli2000@gmail.com">
+                <i class="bx bxs-envelope"></i>
+              </a>
+              <a href="https://wa.me/919603883879?text=Hi%20Avinash,%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp Chat" title="WhatsApp">
+                <i class="bx bxl-whatsapp"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-      </div>
-      <!-- <div class="skills-img">
-        <img src="images/skills-image.png" alt="">
-      </div> -->
-      <div class="skills-icons">
-        <i class="devicon-react-original colored" title="React.js"></i>
-        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-        <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-        <i class="devicon-express-original colored" title="Express.js" style="color: #fff; background-color: #000; border-radius: 5px;"></i>
-        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-        <i class="devicon-html5-plain colored" title="HTML5"></i>
-        <i class="devicon-css3-plain colored" title="CSS3"></i>
-        <i class="devicon-git-plain colored" title="Git"></i>
-      </div>
-      
-      
-    </div>
-  </section>
+        <!-- Hero Visual / Photo Card -->
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <img src="avinash-about.jpg" alt="Avinash Saripalli - MERN Stack Developer" class="hero-photo" width="400" height="480">
+            </div>
 
-  <section class="projects" id="projects">
-    <div class="heading">
-      <h2>Projects</h2>
-      <span>What I've Built</span>
-    </div>
-    <div class="services-content">
-      <div class="services-box">
-        <i class='bx bx-briefcase'></i>
-        <h3>Employee Management System</h3>
-        <p>Built a full-stack, role-based system using ReactJS, Node.js, Express.js, and MySQL. Features include JWT authentication, custom dashboards, leave tracking, employee CRUD, and real-time charts via REST APIs.</p>
-      </div>
-      <div class="services-box">
-        <i class='bx bx-cloud'></i>
-        <h3>CP-ABE-HP: Secure Cloud Data Sharing</h3>
-        <p>Developed a secure access control model using Java and cryptography for encrypted cloud data with hidden policy and secure user revocation. Enhanced scalability and confidentiality in cloud environments.</p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="education" id="education">
-    <div class="heading">
-      <h2>Education</h2>
-      <span>My Academic Background</span>
-    </div>
-    <div class="education-content">
-      <div class="education-box">
-        <i class='bx bx-book-open'></i>
-        <h3>B.Tech - Computer Science & Engineering</h3>
-        <p>Sir C. R. Reddy College of Engineering, Eluru (2019 - 2023)</p>
-      </div>
-      <div class="education-box">
-        <i class='bx bx-book'></i>
-        <h3>Intermediate (MPC)</h3>
-        <p>Sri Chaitanya Junior College, Eluru (2017 - 2019)</p>
-      </div>
-      <div class="education-box">
-        <i class='bx bx-book'></i>
-        <h3>S.S.C</h3>
-        <p>Sri Chaitanya E.M School, Eluru (2016 - 2017)</p>
-      </div>
-    </div>
-  </section>
-  
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="devicon-react-original colored"></i>
+              <span>React Specialist</span>
+            </div>
 
-  <div class="footer">
-    <h2>Connect With Me</h2>
-    <div class="footer-social">
-      <a href="https://github.com/AvinashSaripalli"><i class='bx bxl-github'></i></a>
-      <a href="https://www.linkedin.com/in/avinash-saripalli-93009525a/"><i class='bx bxl-linkedin'></i></a>
-      <a href="mailto:avinashsaripalli2000@gmail.com"><i class='bx bxs-envelope'></i></a>
+            <div class="floating-badge badge-bottom-left">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>MERN Stack</span>
+            </div>
+
+            <div class="floating-badge badge-center-right">
+              <i class="bx bx-check-shield text-accent"></i>
+              <span>Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Metrics Strip -->
+      <div class="container hero-metrics-container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-wrap"><i class="bx bx-briefcase-alt"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" data-target="1">1+</span>
+              <span class="metric-label">Years Pro Dev Experience</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap"><i class="bx bx-code-block"></i></div>
+            <div class="metric-data">
+              <span class="metric-number" data-target="10">10+</span>
+              <span class="metric-label">Projects & Applications</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap"><i class="bx bx-layer"></i></div>
+            <div class="metric-data">
+              <span class="metric-number">Full Stack</span>
+              <span class="metric-label">End-to-End Delivery</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap"><i class="bx bx-time-five"></i></div>
+            <div class="metric-data">
+              <span class="metric-number text-success">Immediate</span>
+              <span class="metric-label">Joining Availability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Ideas Into <span class="gradient-text">High-Impact Code</span></h2>
+          <p class="section-subtitle">A brief overview of my engineering philosophy, background, and what drives me.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Bio Card with secondary photo -->
+          <div class="about-bio-card">
+            <div class="about-image-wrapper">
+              <img src="WhatsApp Image 2025-04-11 at 09.40.10_2657b5ad.jpg" alt="Avinash Saripalli Portrait" class="about-image" width="340" height="380">
+              <div class="experience-chip">
+                <span class="chip-num">2024–Now</span>
+                <span class="chip-text">Software Developer</span>
+              </div>
+            </div>
+
+            <div class="about-quick-specs">
+              <div class="spec-row">
+                <span class="spec-title"><i class="bx bx-map"></i> Location:</span>
+                <span class="spec-value">Hyderabad, Telangana, India</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-title"><i class="bx bx-envelope"></i> Email:</span>
+                <span class="spec-value">avinashsaripalli2000@gmail.com</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-title"><i class="bx bx-phone"></i> Phone:</span>
+                <span class="spec-value">+91 9603883879</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-title"><i class="bx bx-badge-check"></i> Degree:</span>
+                <span class="spec-value">B.Tech in Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Story & Competencies -->
+          <div class="about-details">
+            <h3 class="about-heading">
+              Hi there! I am a full-stack engineer driven by crafting <span class="highlight-word">seamless user experiences</span> and robust web systems.
+            </h3>
+
+            <div class="about-text-content">
+              <p>
+                I am a <strong>MERN Stack Developer</strong> with a solid foundation in modern full-stack web engineering. Currently working as a <strong>Software Developer at Karncy Ventures Private Limited</strong> in Hyderabad, I specialize in architecting responsive, user-centric web applications using <strong>React.js, Node.js, Express.js, and MongoDB / MySQL</strong>.
+              </p>
+              <p>
+                My focus centers on writing clean, modular, and maintainable code. From designing intuitive role-based dashboards with <strong>Material UI & Redux</strong> to engineering secure <strong>RESTful APIs with JWT authentication</strong>, I thrive at the intersection of aesthetic frontend design and resilient backend performance.
+              </p>
+              <p>
+                I am an active collaborative team player with direct experience partnering with UI/UX designers, backend engineers, and stakeholders in agile environments. I am actively seeking <strong>Frontend Developer / MERN Stack Developer roles</strong> and am <strong>available for immediate joining</strong>.
+              </p>
+            </div>
+
+            <!-- Core Strengths Cards -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="bx bx-layout"></i></div>
+                <div class="pillar-content">
+                  <h4>Modern Frontend</h4>
+                  <p>React.js, Redux Toolkit, Material UI, responsive mobile-first architecture & state management.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="bx bx-server"></i></div>
+                <div class="pillar-content">
+                  <h4>Robust Backend</h4>
+                  <p>Node.js, Express.js, secure REST APIs, role-based JWT auth, and database modeling.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="bx bx-tachometer"></i></div>
+                <div class="pillar-content">
+                  <h4>Performance & Quality</h4>
+                  <p>Fast render cycles, clean component lifecycle, Git workflows, debugging, and cross-browser testing.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="bx bx-group"></i></div>
+                <div class="pillar-content">
+                  <h4>Team Collaboration</h4>
+                  <p>Agile sprints, peer code reviews, transparent communication, and rapid turnaround.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="AVINASH SARIPALLI.pdf" class="btn btn-primary" target="_blank">
+                <i class="bx bx-show"></i>
+                <span>View Full CV</span>
+              </a>
+              <button class="btn btn-secondary copy-btn" data-clipboard="avinashsaripalli2000@gmail.com">
+                <i class="bx bx-copy"></i>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section class="section timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">My professional industry experience and academic engineering background.</p>
+        </div>
+
+        <!-- Timeline Tab Switcher -->
+        <div class="tab-controls">
+          <button class="tab-btn active" data-tab="work">
+            <i class="bx bx-briefcase"></i>
+            <span>Work Experience</span>
+          </button>
+          <button class="tab-btn" data-tab="education">
+            <i class="bx bx-graduation"></i>
+            <span>Education</span>
+          </button>
+        </div>
+
+        <!-- Work Experience Tab Content -->
+        <div class="tab-panel active" id="tab-work">
+          <div class="timeline-container">
+            <div class="timeline-item featured">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content-card">
+                <div class="card-header-row">
+                  <div>
+                    <span class="timeline-badge badge-active">Present Role</span>
+                    <h3 class="timeline-role">Software Developer</h3>
+                    <h4 class="timeline-company">
+                      <i class="bx bx-buildings"></i> Karncy Ventures Private Limited
+                      <span class="location-tag">&bull; Hyderabad, India</span>
+                    </h4>
+                  </div>
+                  <div class="timeline-date">
+                    <i class="bx bx-calendar"></i>
+                    <span>October 2024 — Present</span>
+                  </div>
+                </div>
+
+                <ul class="timeline-bullet-list">
+                  <li>
+                    <i class="bx bx-check-circle bullet-icon"></i>
+                    <span>Developed and maintained responsive, pixel-perfect web interfaces using <strong>ReactJS and Material UI</strong>, prioritizing seamless navigation and accessible component layouts.</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-check-circle bullet-icon"></i>
+                    <span>Architected role-based dashboards, dynamic forms, and responsive components with <strong>React Hooks and Redux</strong> for centralized application state.</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-check-circle bullet-icon"></i>
+                    <span>Integrated <strong>RESTful APIs</strong> with asynchronous data fetching to connect frontend modules with backend microservices and enable real-time data flow.</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-check-circle bullet-icon"></i>
+                    <span>Collaborated closely with cross-functional <strong>UI/UX designers and backend developers</strong> in an agile environment to deliver user-centric features on schedule.</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-check-circle bullet-icon"></i>
+                    <span>Profiled and optimized application performance, eliminating bottlenecks and ensuring consistent sub-second rendering across browsers and devices.</span>
+                  </li>
+                </ul>
+
+                <div class="timeline-tags">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Material UI</span>
+                  <span class="tech-tag">JavaScript (ES6+)</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">Git & GitHub</span>
+                  <span class="tech-tag">Agile Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Tab Content -->
+        <div class="tab-panel" id="tab-education">
+          <div class="timeline-container">
+            <!-- B.Tech -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content-card">
+                <div class="card-header-row">
+                  <div>
+                    <span class="timeline-badge badge-degree">Graduation</span>
+                    <h3 class="timeline-role">Bachelor of Technology (B.Tech) - Computer Science & Engineering</h3>
+                    <h4 class="timeline-company">
+                      <i class="bx bx-school"></i> Sir C. R. Reddy College of Engineering
+                      <span class="location-tag">&bull; Eluru, Andhra Pradesh</span>
+                    </h4>
+                  </div>
+                  <div class="timeline-date">
+                    <i class="bx bx-calendar"></i>
+                    <span>2019 — 2023</span>
+                  </div>
+                </div>
+                <p class="education-summary">
+                  Comprehensive curriculum covering core computer science principles, software architecture, data structures, cloud systems, and database engineering.
+                </p>
+                <div class="education-highlights">
+                  <div class="edu-stat">
+                    <span class="edu-stat-label">Academic Score:</span>
+                    <span class="edu-stat-value">6.74 CGPA</span>
+                  </div>
+                  <div class="edu-stat">
+                    <span class="edu-stat-label">Capstone Project:</span>
+                    <span class="edu-stat-value">CP-ABE-HP Cryptographic Cloud Security</span>
+                  </div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tech-tag">Data Structures & Algorithms</span>
+                  <span class="tech-tag">Database Management</span>
+                  <span class="tech-tag">Cloud Computing</span>
+                  <span class="tech-tag">OOP & Web Tech</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Intermediate -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+              <div class="timeline-content-card">
+                <div class="card-header-row">
+                  <div>
+                    <span class="timeline-badge badge-school">Higher Secondary</span>
+                    <h3 class="timeline-role">Intermediate (MPC: Mathematics, Physics, Chemistry)</h3>
+                    <h4 class="timeline-company">
+                      <i class="bx bx-school"></i> Sri Chaitanya Junior College
+                      <span class="location-tag">&bull; Eluru, Andhra Pradesh</span>
+                    </h4>
+                  </div>
+                  <div class="timeline-date">
+                    <i class="bx bx-calendar"></i>
+                    <span>2017 — 2019</span>
+                  </div>
+                </div>
+                <p class="education-summary">
+                  Rigorous focus on advanced analytical problem solving, discrete mathematical logic, and physical sciences.
+                </p>
+                <div class="education-highlights">
+                  <div class="edu-stat">
+                    <span class="edu-stat-label">Academic Score:</span>
+                    <span class="edu-stat-value text-accent font-bold">9.5 CGPA (Distinction)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SSC -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content-card">
+                <div class="card-header-row">
+                  <div>
+                    <span class="timeline-badge badge-school">Secondary School</span>
+                    <h3 class="timeline-role">Secondary School Certificate (S.S.C)</h3>
+                    <h4 class="timeline-company">
+                      <i class="bx bx-school"></i> Sri Chaitanya E.M School
+                      <span class="location-tag">&bull; Eluru, Andhra Pradesh</span>
+                    </h4>
+                  </div>
+                  <div class="timeline-date">
+                    <i class="bx bx-calendar"></i>
+                    <span>2016 — 2017</span>
+                  </div>
+                </div>
+                <p class="education-summary">
+                  Solid foundation in mathematics, science, computer studies, and communication skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">My <span class="gradient-text">Skill Arsenal</span></h2>
+          <p class="section-subtitle">Technologies, frameworks, and developer tools I leverage to build production-grade web solutions.</p>
+        </div>
+
+        <!-- Skills Filter Bar -->
+        <div class="skills-filter-wrapper">
+          <button class="skill-filter-btn active" data-filter="all">All Tech</button>
+          <button class="skill-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend & API</button>
+          <button class="skill-filter-btn" data-filter="database">Databases</button>
+          <button class="skill-filter-btn" data-filter="tools">Dev Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- React.js -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">React.js</h4>
+              <span class="skill-category-label">Frontend Framework</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+            </div>
+            <p class="skill-tags">Hooks, Redux, Context API, Virtual DOM, Component LifeCycle</p>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">JavaScript (ES6+)</h4>
+              <span class="skill-category-label">Core Language</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+            </div>
+            <p class="skill-tags">Async/Await, Promises, Closures, DOM, Modular Architecture</p>
+          </div>
+
+          <!-- Node.js -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Node.js</h4>
+              <span class="skill-category-label">Backend Runtime</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 82%;"></div>
+            </div>
+            <p class="skill-tags">Event Loop, Streams, File System, NPM ecosystem</p>
+          </div>
+
+          <!-- Express.js -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-express-original" style="font-size: 2.4rem; color: #fff;"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Express.js</h4>
+              <span class="skill-category-label">Server Framework</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 80%;"></div>
+            </div>
+            <p class="skill-tags">RESTful APIs, Middlewares, Routing, Error Handling</p>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-icon-wrap">
+              <i class="devicon-mongodb-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">MongoDB</h4>
+              <span class="skill-category-label">NoSQL Database</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 78%;"></div>
+            </div>
+            <p class="skill-tags">Mongoose, Aggregations, Schema Design, Atlas</p>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-icon-wrap">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">MySQL</h4>
+              <span class="skill-category-label">Relational Database</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 80%;"></div>
+            </div>
+            <p class="skill-tags">Relational Schemas, Complex Joins, Normalization, CRUD</p>
+          </div>
+
+          <!-- Redux & State Management -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-redux-original colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Redux / Redux Toolkit</h4>
+              <span class="skill-category-label">State Management</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 82%;"></div>
+            </div>
+            <p class="skill-tags">RTK Query, Slices, Global Store, Actions & Reducers</p>
+          </div>
+
+          <!-- Material UI & CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-materialui-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Material UI & Tailwind</h4>
+              <span class="skill-category-label">UI Libraries</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+            </div>
+            <p class="skill-tags">Custom Themes, Responsive Grid, Sx props, Styled Components</p>
+          </div>
+
+          <!-- HTML5 & Modern CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">HTML5 & CSS3</h4>
+              <span class="skill-category-label">Core Web Standard</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 92%;"></div>
+            </div>
+            <p class="skill-tags">Semantic HTML, Flexbox, CSS Grid, Custom Properties, Animations</p>
+          </div>
+
+          <!-- RESTful APIs & JWT -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">
+              <i class="bx bx-transfer-alt text-primary-accent" style="font-size: 2.4rem;"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">REST APIs & JWT</h4>
+              <span class="skill-category-label">API Architecture</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Proficient</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+            </div>
+            <p class="skill-tags">Token Auth, Role-Based Access Control, HTTP Status, JSON</p>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-wrap">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Git & GitHub</h4>
+              <span class="skill-category-label">Version Control</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+            </div>
+            <p class="skill-tags">Branching, Pull Requests, Merge Conflict Resolution, CI/CD</p>
+          </div>
+
+          <!-- Postman & Dev Tools -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-wrap">
+              <i class="devicon-postman-plain colored"></i>
+            </div>
+            <div class="skill-meta">
+              <h4 class="skill-name">Postman & VS Code</h4>
+              <span class="skill-category-label">Developer Workflow</span>
+            </div>
+            <div class="skill-level-row">
+              <span class="skill-badge-pro">Expertise</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+            </div>
+            <p class="skill-tags">API Testing, Environment Vars, Debugging, Chrome DevTools</p>
+          </div>
+        </div>
+
+        <!-- Skills Banner / Dev Philosophy Box -->
+        <div class="dev-philosophy-banner">
+          <div class="philosophy-icon">
+            <i class="bx bx-code-curly"></i>
+          </div>
+          <div class="philosophy-text">
+            <h4>Clean Architecture & Developer Empathy</h4>
+            <p>I don't just write code that executes; I write clean, maintainable, modular components that are easy to test, scale, and collaborate on with team members.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">What I Have <span class="gradient-text">Engineered</span></h2>
+          <p class="section-subtitle">A collection of full-stack web applications, secure systems, and interactive software.</p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="project-filter-wrapper">
+          <button class="proj-filter-btn active" data-filter="all">All Projects</button>
+          <button class="proj-filter-btn" data-filter="fullstack">Full Stack & MERN</button>
+          <button class="proj-filter-btn" data-filter="frontend">Frontend & React</button>
+          <button class="proj-filter-btn" data-filter="security">Security & Cloud</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Employee Management System -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-banner ems-gradient">
+              <div class="banner-badge">
+                <i class="bx bx-star"></i> Featured MERN Application
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-window">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-url">dashboard.ems.enterprise/auth</span>
+                  </div>
+                  <div class="mockup-body">
+                    <div class="mockup-sidebar"></div>
+                    <div class="mockup-content">
+                      <div class="mockup-stat-row">
+                        <div class="mockup-stat"></div>
+                        <div class="mockup-stat"></div>
+                        <div class="mockup-stat"></div>
+                      </div>
+                      <div class="mockup-chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-tags-row">
+                <span class="pill-tag">ReactJS</span>
+                <span class="pill-tag">Node.js</span>
+                <span class="pill-tag">Express.js</span>
+                <span class="pill-tag">MySQL</span>
+                <span class="pill-tag">JWT</span>
+              </div>
+
+              <h3 class="project-title">Employee Management System (EMS)</h3>
+              <p class="project-description">
+                A full-stack, enterprise-grade role-based management suite built with custom dashboards for Admin, Manager, and Employee roles. Features secure JWT authentication, dynamic leave tracking, automated employee CRUD operations, and real-time analytical charts via REST APIs.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Role-based access control with granular permission layers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Leave management & employee lifecycle workflow automation</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Real-time analytical metrics with interactive charting</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/AvinashSaripalli" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="bx bxl-github"></i>
+                  <span>Source Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="bx bx-link-external"></i>
+                  <span>Live Demo / Inquiry</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: CP-ABE-HP -->
+          <article class="project-card" data-category="security">
+            <div class="project-card-banner crypto-gradient">
+              <div class="banner-badge">
+                <i class="bx bx-shield-quarter"></i> Cloud Security & Research
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-window">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-url">cloud-crypto-security://cp-abe-hp</span>
+                  </div>
+                  <div class="mockup-body crypto-body">
+                    <div class="crypto-key-visual">
+                      <i class="bx bx-lock-alt"></i>
+                      <span>AES-256 + CP-ABE Encrypted Data Stream</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-tags-row">
+                <span class="pill-tag">Java</span>
+                <span class="pill-tag">Cryptography</span>
+                <span class="pill-tag">Cloud Storage</span>
+                <span class="pill-tag">CP-ABE</span>
+              </div>
+
+              <h3 class="project-title">CP-ABE-HP: Secure Cloud Data Sharing</h3>
+              <p class="project-description">
+                Advanced cryptographic access control model enabling fine-grained, policy-based sharing of encrypted multi-tenant cloud storage. Implements hidden policy access structures to protect sensitive user attributes and dynamic revocation mechanisms to secure multi-user environments.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Hidden access policies to guarantee user anonymity</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Immediate user revocation without complete system re-encryption</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Optimized attribute management for high-scalability cloud setups</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/AvinashSaripalli" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="bx bxl-github"></i>
+                  <span>View Repository</span>
+                </a>
+                <a href="#about" class="btn btn-ghost btn-sm">
+                  <i class="bx bx-info-circle"></i>
+                  <span>Project Details</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: MERN Interactive E-Commerce & Inventory Platform -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-banner ecommerce-gradient">
+              <div class="banner-badge">
+                <i class="bx bx-cart"></i> MERN Web Application
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-window">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-url">storefront.mern.app/shop</span>
+                  </div>
+                  <div class="mockup-body ecommerce-body">
+                    <div class="mockup-product-grid">
+                      <div class="mockup-card"></div>
+                      <div class="mockup-card"></div>
+                      <div class="mockup-card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-tags-row">
+                <span class="pill-tag">React.js</span>
+                <span class="pill-tag">Redux Toolkit</span>
+                <span class="pill-tag">Node.js</span>
+                <span class="pill-tag">MongoDB</span>
+                <span class="pill-tag">Express</span>
+              </div>
+
+              <h3 class="project-title">MERN E-Commerce & Inventory Hub</h3>
+              <p class="project-description">
+                A full-featured responsive online store with dynamic product catalog, multi-criteria filtering, persistent shopping cart using Redux Toolkit, user profile dashboard, order status tracking, and simulated checkout flow.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Global cart state management with persistent local sync</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>MongoDB Atlas database with product search indexing</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Responsive UI with dark/light mode compatibility</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/AvinashSaripalli" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="bx bxl-github"></i>
+                  <span>Source Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="bx bx-play-circle"></i>
+                  <span>Request Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Developer Portfolio & Interactive Lab -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-card-banner portfolio-gradient">
+              <div class="banner-badge">
+                <i class="bx bx-code"></i> Frontend Showcase
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-window">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="mockup-url">avinashsaripalli.dev</span>
+                  </div>
+                  <div class="mockup-body portfolio-body">
+                    <div class="mockup-hero-code">
+                      <span class="code-line">&lt;Developer name="Avinash" /&gt;</span>
+                      <span class="code-line">&lt;Status value="Immediate" /&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-tags-row">
+                <span class="pill-tag">HTML5</span>
+                <span class="pill-tag">Modern CSS3</span>
+                <span class="pill-tag">Vanilla JS</span>
+                <span class="pill-tag">Theme Engine</span>
+              </div>
+
+              <h3 class="project-title">Interactive Ultra-Modern Developer Portfolio</h3>
+              <p class="project-description">
+                Engineered with modern CSS custom properties, glassmorphism, responsive flex/grid layouts, an interactive developer CLI console simulator, toast notifications, and dark/light theme persistence. Built for speed, accessibility, and high visual impact.
+              </p>
+
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Zero external heavyweight frameworks for lightning-fast 100/100 Lighthouse performance</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Embedded interactive Unix CLI terminal simulator</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bx bx-check text-accent"></i>
+                  <span>Full mobile responsiveness down to 320px devices</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/AvinashSaripalli/My-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="bx bxl-github"></i>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="#home" class="btn btn-primary btn-sm">
+                  <i class="bx bx-check-circle"></i>
+                  <span>Currently Viewing</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL / CONSOLE SECTION -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Playground</span>
+          <h2 class="section-title">Developer <span class="gradient-text">CLI Console</span></h2>
+          <p class="section-subtitle">Type commands or click quick action buttons below to inspect my profile interactively.</p>
+        </div>
+
+        <div class="terminal-wrapper">
+          <div class="terminal-topbar">
+            <div class="terminal-dots">
+              <span class="term-dot close"></span>
+              <span class="term-dot minimize"></span>
+              <span class="term-dot maximize"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="bx bx-terminal"></i>
+              <span>avinash@dev-environment: ~ (zsh)</span>
+            </div>
+            <button class="terminal-clear-btn" id="terminal-clear-btn" title="Clear console">
+              <i class="bx bx-trash"></i>
+              <span>Clear</span>
+            </button>
+          </div>
+
+          <!-- Quick command buttons -->
+          <div class="terminal-shortcuts">
+            <span class="shortcuts-label">Quick Run:</span>
+            <button class="cmd-pill" data-cmd="help">help</button>
+            <button class="cmd-pill" data-cmd="skills">skills</button>
+            <button class="cmd-pill" data-cmd="experience">experience</button>
+            <button class="cmd-pill" data-cmd="contact">contact</button>
+            <button class="cmd-pill" data-cmd="education">education</button>
+            <button class="cmd-pill" data-cmd="hobbies">hobbies</button>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <div class="term-line output-text text-muted">
+              Antigravity Virtual Developer Console [Version 2.4.0]<br>
+              Type <span class="term-highlight">help</span> or click any command pill above to get started.
+            </div>
+          </div>
+
+          <form class="terminal-input-row" id="terminal-form">
+            <span class="terminal-prompt">avinash@dev:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help', 'skills', 'experience'..." autocomplete="off" spellcheck="false">
+            <button type="submit" class="terminal-submit-btn" aria-label="Execute command">
+              <i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+          <p class="section-subtitle">I'm currently seeking Front-End & MERN Stack roles and available for immediate joining. Reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Direct Connect Cards -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Contact Information</h3>
+            <p class="contact-panel-desc">
+              Whether you have an open position, an exciting freelance project, or simply want to connect, feel free to reach out directly through any of these channels:
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon email-icon">
+                  <i class="bx bx-envelope"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Email</span>
+                  <a href="mailto:avinashsaripalli2000@gmail.com" class="contact-card-value">avinashsaripalli2000@gmail.com</a>
+                </div>
+                <button class="copy-icon-btn copy-btn" data-clipboard="avinashsaripalli2000@gmail.com" title="Copy email address" aria-label="Copy email">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+
+              <!-- Phone & WhatsApp Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon phone-icon">
+                  <i class="bx bx-phone-call"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Phone & WhatsApp</span>
+                  <a href="tel:+919603883879" class="contact-card-value">+91 9603883879</a>
+                </div>
+                <button class="copy-icon-btn copy-btn" data-clipboard="+919603883879" title="Copy phone number" aria-label="Copy phone number">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon location-icon">
+                  <i class="bx bx-map-pin"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Current Location</span>
+                  <span class="contact-card-value">Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+
+              <!-- Availability Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon status-icon">
+                  <i class="bx bx-check-shield"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Employment Status</span>
+                  <span class="contact-card-value text-success font-semibold">Immediate Joining &bull; Full-time / Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Social & Chat Buttons -->
+            <div class="direct-chat-row">
+              <a href="https://wa.me/919603883879?text=Hi%20Avinash,%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <i class="bx bxl-whatsapp"></i>
+                <span>Chat on WhatsApp</span>
+              </a>
+              <a href="https://www.linkedin.com/in/avinash-saripalli-93009525a/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                <i class="bx bxl-linkedin"></i>
+                <span>Connect on LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="form-panel-title">Send a Direct Message</h3>
+            <p class="form-panel-subtitle">Fill in the fields below and I'll get back to you promptly.</p>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="bx bx-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="bx bx-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="bx bx-chat input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="Job Opportunity / Project Inquiry" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea id="contact-message" name="message" rows="5" placeholder="Hi Avinash, we have an exciting React / MERN developer role at our company..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="contact-submit-btn">
+                <i class="bx bx-send"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">Avinash</span>
+            <span class="logo-dot">.</span>
+            <span class="logo-tag">dev</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            MERN Stack Developer &bull; Building modern, high-performance web applications with clean architecture.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Social Channels</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/AvinashSaripalli" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/avinash-saripalli-93009525a/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i> LinkedIn</a></li>
+            <li><a href="mailto:avinashsaripalli2000@gmail.com"><i class="bx bx-envelope"></i> Email</a></li>
+            <li><a href="https://wa.me/919603883879" target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp"></i> WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Avinash Saripalli. All rights reserved. Crafted with clean modern web standards.
+        </p>
+        <div class="footer-status-pill">
+          <span class="pulse-core-sm"></span>
+          <span>Open to exciting engineering roles</span>
+        </div>
+      </div>
     </div>
+  </footer>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="toast-notification" role="alert" aria-live="assertive">
+    <i class="bx bx-check-circle toast-icon"></i>
+    <span id="toast-message">Copied to clipboard!</span>
   </div>
-  <div class="copyright">
-    <footer>
-      <p>&copy; 2024 Avinash Saripalli. All rights reserved.</p>
-    </footer>
-  </div>
+
+  <!-- Scroll-to-Top Button with Progress Indicator -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg class="progress-ring" width="46" height="46">
+      <circle class="progress-ring-circle" stroke="var(--primary-color)" stroke-width="3" fill="transparent" r="20" cx="23" cy="23" />
+    </svg>
+    <i class="bx bx-chevron-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
   <script src="./script.js"></script>
 </body>
 
