@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTimelineTabs();
   initSkillsFilter();
   initProjectsFilter();
-  initInteractiveTerminal();
   initClipboardAndToast();
   initScrollToTop();
   initContactForm();
@@ -264,131 +263,7 @@ function initProjectsFilter() {
 }
 
 /* ==========================================================================
-   8. Interactive Developer CLI Terminal Simulator
-   ========================================================================== */
-function initInteractiveTerminal() {
-  const form = document.getElementById('terminal-form');
-  const input = document.getElementById('terminal-input');
-  const output = document.getElementById('terminal-output');
-  const clearBtn = document.getElementById('terminal-clear-btn');
-  const shortcutPills = document.querySelectorAll('.cmd-pill');
-
-  if (!form || !input || !output) return;
-
-  const commands = {
-    help: `Available Commands:
-  • <span class="term-highlight">skills</span>      - List core frontend & backend competencies
-  • <span class="term-highlight">experience</span>  - View professional work history at Karncy Ventures
-  • <span class="term-highlight">projects</span>    - Browse key production & research projects
-  • <span class="term-highlight">education</span>   - Display academic degrees & achievements
-  • <span class="term-highlight">contact</span>     - View direct email, phone, location & socials
-  • <span class="term-highlight">hobbies</span>     - What I enjoy doing outside of work
-  • <span class="term-highlight">clear</span>       - Clear current console output`,
-
-    skills: `Technical Arsenal:
-  [Frontend]:  React.js, Redux / Redux Toolkit, JavaScript (ES6+), Material UI, HTML5, Modern CSS3
-  [Backend]:   Node.js, Express.js, RESTful APIs, JWT Authentication
-  [Database]:  MongoDB, MySQL
-  [Dev Tools]: Git, GitHub, Postman, VS Code, Vercel
-  [Core]:      Component Lifecycle, Responsive Design, Clean Code Architecture`,
-
-    experience: `Current Role:
-  • <span class="term-highlight">Software Developer</span> @ Karncy Ventures Private Limited (Oct 2024 - Present)
-    - Engineered responsive web apps using ReactJS and Material UI.
-    - Implemented role-based dashboards and state flows with Redux.
-    - Integrated high-throughput REST APIs and reduced latency.
-    - Available for immediate joining for new full-time / contract roles.`,
-
-    projects: `Featured Projects:
-  1. <span class="term-highlight">Employee Management System</span> (React, Node, Express, MySQL, JWT)
-     - Role-based permissions, automated CRUD, analytical dashboards.
-  2. <span class="term-highlight">CP-ABE-HP Cloud Security</span> (Java, Cryptography, Cloud Computing)
-     - Ciphertext-policy attribute encryption with hidden policy and user revocation.
-  3. <span class="term-highlight">MERN E-Commerce Platform</span> (React, Redux, Node, MongoDB)
-     - Shopping cart state persistence, product filtering, responsive UI.`,
-
-    education: `Academic Credentials:
-  • <span class="term-highlight">B.Tech in Computer Science & Engineering</span>
-    - Sir C. R. Reddy College of Engineering (2019 - 2023) | CGPA: 6.74
-  • <span class="term-highlight">Intermediate (MPC)</span>
-    - Sri Chaitanya Junior College (2017 - 2019) | CGPA: 9.5 (Distinction)`,
-
-    contact: `Direct Contacts:
-  • Email:    <a href="mailto:avinashsaripalli2000@gmail.com" class="term-highlight">avinashsaripalli2000@gmail.com</a>
-  • Phone:    <a href="tel:+919603883879" class="term-highlight">+91 9603883879</a>
-  • WhatsApp: <a href="https://wa.me/919603883879" target="_blank" class="term-highlight">wa.me/919603883879</a>
-  • GitHub:   <a href="https://github.com/AvinashSaripalli" target="_blank" class="term-highlight">github.com/AvinashSaripalli</a>
-  • Location: Hyderabad, Telangana, India`,
-
-    hobbies: `Outside of Code:
-  • Exploring emerging UI/UX design trends & web micro-interactions.
-  • Experimenting with open-source tools and JavaScript libraries.
-  • Playing cricket, chess, and following developer tech podcasts.`,
-
-    sudo: `Permission Denied: You are already granted VIP guest access to Avinash's terminal!`
-  };
-
-  function executeCommand(rawCmd) {
-    const cmd = rawCmd.trim().toLowerCase();
-    if (!cmd) return;
-
-    // Append echoed command
-    const cmdEcho = document.createElement('div');
-    cmdEcho.className = 'term-line';
-    cmdEcho.innerHTML = `<span class="terminal-prompt">avinash@dev:~$</span> <span class="term-cmd-echo">${escapeHtml(rawCmd)}</span>`;
-    output.appendChild(cmdEcho);
-
-    // Process response
-    if (cmd === 'clear') {
-      output.innerHTML = '';
-    } else if (commands[cmd]) {
-      const response = document.createElement('div');
-      response.className = 'term-line output-text';
-      response.innerHTML = commands[cmd];
-      output.appendChild(response);
-    } else {
-      const notFound = document.createElement('div');
-      notFound.className = 'term-line output-text text-muted';
-      notFound.innerHTML = `command not found: <span style="color:#ef4444">${escapeHtml(cmd)}</span>. Type <span class="term-highlight">help</span> for available commands.`;
-      output.appendChild(notFound);
-    }
-
-    output.scrollTop = output.scrollHeight;
-  }
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    executeCommand(input.value);
-    input.value = '';
-  });
-
-  shortcutPills.forEach((pill) => {
-    pill.addEventListener('click', () => {
-      const cmd = pill.getAttribute('data-cmd');
-      executeCommand(cmd);
-    });
-  });
-
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      output.innerHTML = '';
-      showToast('Terminal screen cleared');
-    });
-  }
-
-  function escapeHtml(str) {
-    return str.replace(/[&<>"']/g, (m) => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#39;'
-    })[m]);
-  }
-}
-
-/* ==========================================================================
-   9. Clipboard Copying & Toast Notifications
+   8. Clipboard Copying & Toast Notifications
    ========================================================================== */
 function initClipboardAndToast() {
   const copyButtons = document.querySelectorAll('.copy-btn');

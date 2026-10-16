@@ -12,7 +12,6 @@ An ultra-modern, responsive, high-performance personal portfolio website built f
 
 - **⚡ Blazing Fast Performance:** 100/100 Lighthouse friendly, pure semantic HTML5, modern CSS variables, and lightweight ES6+ JavaScript with zero heavy framework bloat.
 - **🎨 Glassmorphic Dark & Light Modes:** Elegant theme engine with system preference detection and persistent user preference via `localStorage`.
-- **⌨️ Interactive CLI Terminal (`avinash@dev:~$`):** A simulated interactive Unix terminal environment where recruiters and developers can explore skills, experience, and contact details via command line.
 - **💼 Work Experience Timeline:** Highlighting industry experience as a **Software Developer at Karncy Ventures Private Limited** (ReactJS, Redux, Material UI, RESTful APIs).
 - **🚀 Featured Projects Showcase:** Filterable project showcase featuring **Employee Management System (EMS)**, **CP-ABE-HP Cloud Security**, and **Full-Stack MERN applications** with interactive browser mockups.
 - **🛠️ Interactive Technical Arsenal:** Filterable matrix categorized by Frontend, Backend, Databases, and Developer Tools with animated proficiency meters.
@@ -39,10 +38,10 @@ An ultra-modern, responsive, high-performance personal portfolio website built f
 MY Portfolio/
 ├── index.html                                 # Semantic, accessible HTML5 structure & SEO
 ├── styles.css                                 # Modern design system, themes, and animations
-├── script.js                                  # Interactive engine (CLI, theme, filters, typewriter)
+├── script.js                                  # Interactive engine (theme, filters, typewriter, toasts)
 ├── AVINASH SARIPALLI.pdf                      # Official developer resume / CV
 ├── avinash-about.jpg                          # Professional portrait photo
-├── WhatsApp Image 2025-04-11 at 09.40.10.jpg # Secondary portrait photo
+├── avinash-about-portrait.jpg                 # Upper-torso portrait photo for About section
 └── README.md                                  # Repository documentation
 ```
 
